@@ -1,0 +1,23 @@
+html {
+  background-image: url(/media/myprofilebackground.jpg);
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(18, 18, 19);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bas {
+  text-align: center;
+  color: black;
+  background-color: brown;
+  font-size: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 70%;
+  margin: auto;
+  margin-top: -7px;
+}
+.button {
+  background-color: rgb(100, 87, 224);
+}
+.inp {
+  margin-left: 50px;
+}

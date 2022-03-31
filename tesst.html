@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
         <meta charset="UTF-8" />
             <title>test HTML</title>
 
@@ -24,9 +23,9 @@
                 <p>H<sub>2</sub>O => water</p>
                 <!--links-->
             <div>
-                <a href="http://google.com">google'e git</a>
+                <a href="http://google.com" >google'e git</a>
                 <br/>
-                <a href="http://instagram.com" target="_blank" title="instagram'a gitmek icin buraya pass">instgram</a>
+                <a href="http://instagram.com" target="_blank "  title="instagram'a gitmek icin buraya pass">instgram</a>
                 <!--target="_blank" (من اجل فتح الرابط بصفحة جديدة)-->
                 <!--title (title في قسم الرابط يضيف شرح للرابط عند الاشارة اليه قبل الضغط)-->
                 <br/>
@@ -42,8 +41,9 @@
             <img src="https://images.unsplash.co8NlwwfHww%3D&w=1000&q=80" alt="fuck you" height="400px" width="300px" >
             <div>
                <br/>
-
- <!--lists-->  <div> <!--lists-->
+               <h1 style="border: 2px solid blue;">fuck you very hard</h1>
+               <h1 style="border: 2px solid Violet;">fuck World</h1>
+               <!--lists-->  <div > <!--lists-->
                 <h2>haftanin gunlari:</h2>
                 <!--ul=> unorderd list
                     il=>list item      --> 
@@ -81,10 +81,11 @@
                             <dd>fatih okumus</dd>
                         </dl>
 
-               </div>
+               </div >
                <hr>
             <!--this is comment
-p => pragraf
+ p => pragraf
+pre =>pargarf يحافظ على تنسيق النص  الفواصل  والفراغات
 b => bold (تكبير الخط)
 strong=> bold => importent text (تكبير نص مهم)
 i=> italec (نص مايل)
@@ -105,8 +106,14 @@ a => link
 label :the inputs name
 required: الزام ملء الحقل
 placeholder => اضافة توضيح داخل الحقل
-value =>  اضافة قيمة اولية داخل الحقل او الزر
-
+value =>  اضافة قيمة اولية لل input بكل انواعها
+name => اسم يمكن رؤيته داخليا
+type => نوع ال input
+type"reset" => input teki bilgiler silme butunu
+max,min => max ve min diger vermek element
+step => (range and num)مقدار الانتقال عند كل ضغطة تستخدم مثلا مع 
+maxlength => الحد الاقصى لعدد العناصر الممكن ادخالها
+minlength => الحد الادنى لعدد العناصر الممكن ادخالها
 -->
 
 <!--media video and audio-->
@@ -116,20 +123,117 @@ muted
 controles
 loop   عند انتهاء الفيدية يقوم بتشغيله من جديد
 source نضع بداخلها الفيديوهات و الاصوات
+poster => الصورة التي تضهر في واجهة الفيديو
+
 -->
 
+<p  style="border: 2px solid blue; " >muhammed malik elhidir</p>
+    <input type="range" step="2" min="0" max="20" value="0">
+    <hr>
+    <input type="number" step="10" min="0" max="100" value="50">
+    <br> 
+        <!--radio birdan fazla secebilmez-->
+<!--
+cheked تحديد الاختيار الاولي
+name يمكن بواسطتها ربط الخيارات بنواع واحد من الاختيار 
+"id" and "for"  بواسطتهم يربط الليبل مع الاينبوت
+-->
+    <hr>
+    <form action="">
+        <div>
+            <input id="win" type="radio" name="os" value="windows" checked>
+            <label for="win">windows</label>
+        </div>
+        <div>
+            <input id="mac" type="radio" name="os" value="mac">
+            <label for="mac">mac</label>
+        </div>
+        <div>
+            <input id="len" type="radio" name="os" value="lenux">
+            <label for="len">lenux</label>
+        </div>
+        <hr>
+        <br> 
+        <!--chekbox birdan fazla secebilir-->
+        <hr>
+        <div>
+            <input id="win1" type="checkbox" name="os" value="windows" checked>
+            <label for="win1">windows</label>
+        </div>
+        <div>
+            <input id="mac1" type="checkbox" name="os" value="mac">
+            <label for="mac1">mac</label>
+        </div>
+        <div>
+            <input id="len1" type="checkbox" name="os" value="lenux">
+            <label for="len1">lenux</label>
+        </div>
+        <br> <hr>
+            <label>CV:  </label>
+            <input type="file" value="dosya">
+        <br> <hr>
+        <label>search:  </label>
+        <input type="search" >
+    <br> <hr>
+    <label>url:  </label>
+    <input type="url" >
+<br> <hr>
+<input type="submit" value="gonder">
+<br> <hr>
+<label>date:  </label>
+<input type="date" >
+<br> <hr>
+<label>month:  </label>
+<input type="month" >
+<br> <hr>
+<label>time:  </label>
+<input type="time" >
+<br> <hr>
+<label for="progamming">bildigini programming dili sec:</label>
 
+    <input list="progamming" name="prog">
+        <datalist id="progamming">
+            <option value="c">
+            <option value="c++">
+            <option value="c#">
+            <option value="java">
+            <option value="python">
+            <option value="html">
+            <option value="css">
+        </datalist>
+        
+<br> <hr>
+        <select name="ulke" id="ulke" multiple>
+            <optgroup label="Asya">
+                <option value="1" >turkiye</option>
+                <option value="2">cin</option>
+                <option value="3" selected>suriye</option>
+                <option value="4">urdun</option>
+            </optgroup>
+      
+            <optgroup label="Avrupa">
+                <option value="5">Almanya</option>
+                <option value="6">fransa</option>
+                <option value="7">bulgaristans</option>
+            </optgroup>
+            
+        </select>
+        <hr><br>
+        <textarea  placeholder="text text"  cols="30" rows="30"></textarea>
+    </form>
+    
+    <hr>
+    <p id="W"></p>
+    <p id="M"></p>
 
+    <script>
+        let txt1="Moh\"am\"ed ";
+        let txt2="ma\'le\'k";
+        document.getElementById("W").innerHTML=(txt1+txt2).length;
+        
+        document.getElementById("M").innerHTML=txt1+txt2;
 
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, similique aliquam? Asperiores, iusto fuga? Blanditiis amet obcaecati repudiandae tempora vero reiciendis molestiae optio, pariatur quos dolore excepturi qui nisi ea.</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, similique aliquam? Asperiores, iusto fuga? Blanditiis amet obcaecati repudiandae tempora vero reiciendis molestiae optio, pariatur quos dolore excepturi qui nisi ea.</p>
-<p id="malik"> <mark> <i> boom qmdwlqkdlkqdlqmdlkmqlqmdklqmdkqm qkmldlqkmwdmqwld klqmwdlqwdmkqwd mqlkwdlqmd</i></mark></p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, similique aliquam? Asperiores, iusto fuga? Blanditiis amet obcaecati repudiandae tempora vero reiciendis molestiae optio, pariatur quos dolore excepturi qui nisi ea.</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, similique aliquam? Asperiores, iusto fuga? Blanditiis amet obcaecati repudiandae tempora vero reiciendis molestiae optio, pariatur quos dolore excepturi qui nisi ea.</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, similique aliquam? Asperiores, iusto fuga? Blanditiis amet obcaecati repudiandae tempora vero reiciendis molestiae optio, pariatur quos dolore excepturi qui nisi ea.</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, similique aliquam? Asperiores, iusto fuga? Blanditiis amet obcaecati repudiandae tempora vero reiciendis molestiae optio, pariatur quos dolore excepturi qui nisi ea.</p>
-
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, similique aliquam? Asperiores, iusto fuga? Blanditiis amet obcaecati repudiandae tempora vero reiciendis molestiae optio, pariatur quos dolore excepturi qui nisi ea.</p>
+    </script>
 </body>
 
 </html>

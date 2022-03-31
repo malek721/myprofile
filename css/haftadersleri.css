@@ -1,0 +1,17 @@
+html{
+    background-color:rgba(119, 136, 153, 0.329)
+}
+h2{
+    text-align: center;
+}
+.tab{
+border-style: groove;
+border-width: 2px;
+background-color: lightblue;
+margin-left: 200px;
+width: 950px;
+height: 350px;
+}
+td{
+    text-align: center;
+}
