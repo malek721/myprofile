@@ -11,12 +11,11 @@
 
   
 
-        <h3>bilgileri giriniz:</h3> 
+        <h2>bilgileriz giriniz:</h2> 
         <form>
             <div>
-                <label >user name:</label>
-                <input type="text"
-                        class="inp1" 
+                <label  > user name:</label>
+                <input type="text"  
                     required
                     autofocus
                     placeholder="kullanci ad"
@@ -25,7 +24,7 @@
             </div>
         <br>
             <div>
-                <label >password:</label>
+                <label class="labl2">password:</label>
                 <input type="password" 
                     required 
                     class="inp2" 
@@ -37,10 +36,10 @@
             </div>
         <br>
             <div>
-                <label >email:</label>
-                <input type="email" 
-                    required 
-                    class="inp3" 
+                <label class="labl3">email:</label>
+                <input class="inp3"
+                type="email" 
+                    required
                     placeholder="email" 
                     value="@gmail.com"
                     name="email"
@@ -48,7 +47,7 @@
             </div>
         <br>
             <div>
-                <label >number:</label>
+                <label class="labl4">number:</label>
                 <input 
                     type="tel" 
                     class="inp4" 
@@ -58,7 +57,10 @@
                     name="number"
                 >
             </div>
-            
+            <br>
+            <label for="area">Açıklama:</label>
+            <br>
+            <textarea id="area" cols="22" rows="8" placeholder="text text"></textarea>
             <hr>
             <div >
                 <input class="button"
@@ -67,7 +69,7 @@
                     >
                 <input class="button"
                     type="reset"
-                    value="sil"
+                    value="Sil"
                 >
             </div>
         </form>

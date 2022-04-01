@@ -1,5 +1,6 @@
 html {
-  background-image: url(/media/myprofilebackground.jpg);
+  background-image: url(/media/mountain.jpg);
+  background-attachment: fixed;
   font-family: "Courier New", Courier, monospace;
   color: rgb(18, 18, 19);
   background-repeat: no-repeat;
@@ -8,16 +9,46 @@ html {
 .bas {
   text-align: center;
   color: black;
-  background-color: brown;
+  background-color:lightblue;
   font-size: 40px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  width: 70%;
-  margin: auto;
   margin-top: -7px;
 }
 .button {
   background-color: rgb(100, 87, 224);
+  width: 60px;
+  height: 25px;
 }
-.inp {
-  margin-left: 50px;
+.inp3{
+text-align: right;
+margin-left: 22px;
+
+}
+textarea{
+margin-left: 116px;
+margin-top: -18px;
+}
+.inp2{
+  margin-left: 4px;
+}
+.inp4{
+  margin-left: 13px; ;
+}
+
+label{
+font-size: large;
+color: aliceblue;
+
+}
+h2{
+  color: aliceblue;
+}
+.labl2{
+  margin-left: 7px;
+}
+.labl3{
+  margin-left: 20px;
+}
+.labl4{
+  margin-left: 18px;
 }
