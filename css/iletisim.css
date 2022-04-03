@@ -1,5 +1,5 @@
 html {
-  background-image: url(/media/mountain.jpg);
+  background-image: url(/media/new_1.jpg);
   background-attachment: fixed;
   font-family: "Courier New", Courier, monospace;
   color: rgb(18, 18, 19);
@@ -51,4 +51,7 @@ h2{
 }
 .labl4{
   margin-left: 18px;
+}
+h3{
+  color: antiquewhite;
 }
